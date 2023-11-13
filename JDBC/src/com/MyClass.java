@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 public class MyClass {
 	public static void main(String[] args) throws SQLException {
-		Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bcci","root","Nitish@2002");
+		Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bcci","root","password");
 		Statement s=connection.createStatement();
 		String create="Create table worldcup(id int, team varchar(255),captain varchar(255));";
 //		s.execute(create);
